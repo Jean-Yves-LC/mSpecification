@@ -8,15 +8,15 @@ A detailed description of the pattern can be found here : http://martinfowler.co
 
 Basically, the Specification is a composite whose leaves are business rules and whose branches are boolean operators. It is then quite easy to build a complex rule (specification) by combining elementary rules. The compliance of an object to the specification thus obtained is checked by calling the isSatisfiedBy method of the specification, taking the object as a parameter.
 
-In the present implementation, we overloaded the "and" (&), "or" (|) and "not" (~) operators, so as making combinations of rules more user friendly.
+In the present implementation, we overloaded the "and" (&), "or" (|) and "not" (~) operators, so as to make rules combinations more user friendly.
 
 
 ## How to install it?
-
+Unzip the `mSpecification.zip` file in a directory which is in your Matlab path.
 
 
 ## How to use it?
-For instance, let's consider the "Person" class:
+For instance, let's consider the `Person` class:
 
 
     classdef Person
@@ -36,7 +36,7 @@ For instance, let's consider the "Person" class:
     end
 
 
-Let's create a specification checking if a person is under 30. This is done by extending the "Specification" class:
+Let's create a specification checking if a person is under 30. This is done by extending the `Specification` class:
 
 
     classdef PersonUnder30Specification < Specification
@@ -63,7 +63,7 @@ and let's use it:
     test = ageSpec.isSatisfiedBy(Jen) ;
 
 
-In this case the test variable turns out to be true...
+In this case the `test` variable turns out to be true...
 
 
 Now let's create a specification checking if a person is male:
@@ -91,6 +91,6 @@ We can now combine the two previous specifications to instanciate a new one, che
     test = newSpec.isSatisfiedBy(Jen) ;
 
 
-Since Jen is a lady, and although she's 16, the test variable is now false...
+Since Jen is a lady, and although she's 16, the `test` variable is now false...
 
 
