@@ -1,21 +1,21 @@
 mSpecification
 ==============
 
-# What is it?
+## What is it?
 A Matlab implementation of the Specification Pattern (Eric Evans, Martin Fowler).
 
 A detailed description of the pattern can be found here : http://martinfowler.com/apsupp/spec.pdf.
 
-Basically, the Specification is a composite whose leaves are business rules and whose branches are boolean operators. It is then quite easy to build a complex rule (specification) by combining elementary rules. The compliance of an object to the specification thus obtained is checked by calling the isSatisfiedBy method of the specification, taking the object as parameter.
+Basically, the Specification is a composite whose leaves are business rules and whose branches are boolean operators. It is then quite easy to build a complex rule (specification) by combining elementary rules. The compliance of an object to the specification thus obtained is checked by calling the isSatisfiedBy method of the specification, taking the object as a parameter.
 
 In the present implementation, we overloaded the "and" (&), "or" (|) and "not" (~) operators, so as making combinations of rules more user friendly.
 
 
-# How to install it?
+## How to install it?
 
 
 
-# How to use it?
+## How to use it?
 For instance, let's consider the "Person" class:
 
 
