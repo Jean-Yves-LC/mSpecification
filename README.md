@@ -1,7 +1,7 @@
 mSpecification
 ==============
 
-
+# What is it?
 A Matlab implementation of the Specification Pattern (Eric Evans, Martin Fowler).
 
 A detailed description of the pattern can be found here : http://martinfowler.com/apsupp/spec.pdf.
@@ -11,6 +11,11 @@ Basically, the Specification is a composite whose leaves are business rules and 
 In the present implementation, we overloaded the "and" (&), "or" (|) and "not" (~) operators, so as making combinations of rules more user friendly.
 
 
+# How to install it?
+
+
+
+# How to use it?
 For instance, let's consider the "Person" class:
 
 
