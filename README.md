@@ -12,7 +12,7 @@ In the present implementation, we overloaded the "and" (&), "or" (|) and "not" (
 
 
 ## How to install it?
-Unzip the `mSpecification.zip` file in a directory which is in your Matlab path.
+Checkout files from the `main` folder to a local directory which is in your Matlab path.
 
 
 ## How to use it?
