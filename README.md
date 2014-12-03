@@ -63,7 +63,7 @@ and let's use it:
     test = ageSpec.isSatisfiedBy(Jen) ;
 
 
-In this case the `test` variable turns out to be true...
+In this case the variable `test` turns out to be true...
 
 
 Now let's create a specification checking if a person is male:
@@ -91,6 +91,6 @@ We can now combine the two previous specifications to instanciate a new one, che
     test = newSpec.isSatisfiedBy(Jen) ;
 
 
-Since Jen is a lady, and although she's 16, the `test` variable is now false...
+Since Jen is a lady, and although she's 16, the variable `test` is now false...
 
 
